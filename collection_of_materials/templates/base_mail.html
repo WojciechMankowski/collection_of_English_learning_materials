@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiały do nauki angielskiego</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+
+            <div class="logo">
+                <div id="logo" >Materiały do nauki angielskiego</div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="nav">
+            <ol>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Zobacz linki</a>
+                    
+                </li>
+                <li><a href="#">Dodaj link</a>
+
+                </li>
+
+
+            </ol>
+
+        </div>
+        {% block content %}{% endblock %}
+
+    </div>
+
+
+
+    <div id="footer">
+        {% block footer %} &copy; Copyright 2021 by <a href="http://domain.invalid/">you</a>. {% endblock %}
+    </div>
+    <script src="{% static 'jquery-1.11.3.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function () {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html>
