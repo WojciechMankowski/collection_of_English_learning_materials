@@ -21,27 +21,24 @@
         </div>
         <div class="nav">
             <ol>
-                <li><a href="#">Strona główna</a></li>
-                <li><a href="#">Zobacz linki</a>
-                    
-                </li>
-                <li><a href="#">Dodaj link</a>
-
-                </li>
-
-
+                <li><a href="{% url 'home' %}">Strona główna</a></li>
+                <li><a href="{% url 'see' %}">Zobacz linki</a></li>
+                <li><a href="{% url 'add' %}">Dodaj link</a></li>
             </ol>
-
         </div>
-        {% block content %}{% endblock %}
+        <div class="box">
+            {% block content %}{% endblock %}
+        </div>
+        
 
     </div>
 
 
 
-    <div id="footer">
-        {% block footer %} &copy; Copyright 2021 by <a href="http://domain.invalid/">you</a>. {% endblock %}
-    </div>
+    <footer>
+        {% block footer %} &copy; Copyright 2021 by 
+        <a href="#">you</a>. {% endblock %}
+    </footer>
     <script src="{% static 'jquery-1.11.3.min.js' %}"></script>
     <script>
         $(document).ready(function () {

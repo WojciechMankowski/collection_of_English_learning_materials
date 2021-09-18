@@ -5,12 +5,37 @@ body {
   font-size: 20px;
   margin: 0 !important;
 }
-#logo{
-    color: #fff;
-    font-weight: 200px;
-    font-size: 55px;
-    width: 100%;
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
 }
+.box form{
+  text-align: center;
+  margin-left: 5%;
+}
+.box input{
+  width: 85%;
+  font-size: 20px;
+}
+.box select{
+  width: 85%;
+  font-size: 20px;
+}
+.box label{
+  font-size: 20px;
+  font-weight: bold;
+}
+.box button{
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px solid #f2d335;
+}
+.box button:hover{
+  background-color: #f2d335;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -25,103 +50,45 @@ body {
   font-size: 48px;
   margin-left: auto;
   margin-right: auto;
+  color: #3D35F2;
+  font-weight: 200px;
+  text-align: center;
 }
 
 .nav {
   width: 100%;
   padding: 10px 0;
   background-color: #f2d335;
+  color: #3D35F2;
   text-align: center;
-  border-top: 1px solid #f2d335;
-  border-bottom: 1px solid #f2d335;
+  
 }
-
-.content {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  padding-top: 10px;
-}
-
-.socials {
-  width: 100%;
-  text-align: center;
-  background-color: #292929;
-}
-
-.socialdivs {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sticky {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
-
 ol {
   padding: 0;
   margin: 0;
   list-style-type: none;
   font-size: 18px;
-  height: 35px;
-  line-height: 200%;
-  display: inline-block;
+  height: 15px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 ol a {
-  color: #ffffff;
   text-decoration: none;
   display: block;
+  color: #fff;
 }
 
 ol > li {
-  float: left;
-  width: 150px;
-  height: 40px;
-  border-right: 1px dashed #f2d335;
+  width: 20%;
+  height: 20px;
 }
-
-ol > li:first-child {
-  border-left: 1px dashed #f2d335;
-}
-
-ol > li:hover {
-  background-color: #f2e530;
-}
-
-ol > li:hover > a {
-  color: #451717;
-}
-
-ol > li > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  height: 40px;
-  display: none;
-}
-
-ol > li:hover > ul {
-  display: block;
-}
-
-ol > li > ul > li {
-  background-color: #f2d335;
-  position: relative;
-  z-index: 100;
-  border-top: 1px dashed #f2d335;
-}
-
-ol > li > ul > li:hover {
-  background-color: #f2d335;
-}
-
-ol > li > ul > li:hover > a {
-  color: #451717;
+footer{
+  padding-top: 15px;
+  background-color: gray;
+  text-align: center;
+  height: 5vh;
 }
