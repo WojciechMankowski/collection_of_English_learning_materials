@@ -658,7 +658,9 @@ pythontex-files-*/
 *.hst
 *.ver
 
-
+.data/
+Dockerfile
+docker-compose.yml
 *.lod
 
 # xcolor
