@@ -87,6 +87,7 @@ ol > li {
   height: 20px;
 }
 footer{
+  margin-top: 15px;
   padding-top: 15px;
   background-color: gray;
   text-align: center;
