@@ -10,7 +10,6 @@ def see_urls(request):
     if request.method == "POST":
         dane = request.POST
         category = dane['category']
-        print(category)
         model = CollectionOfMaterials.objects
         resultat = model.filter(category=category)
         print(resultat)

@@ -87,9 +87,17 @@ ol > li {
   height: 20px;
 }
 footer{
-  margin-top: 15px;
+  margin-bottom: 15px;
+
   padding-top: 15px;
   background-color: gray;
   text-align: center;
-  height: 5vh;
+  height: 7vh;
+}
+.see a{
+  text-decoration: none;
+  color: #0d0d0d;
+}
+.see a:hover{
+  color: #f2d335;
 }

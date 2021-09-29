@@ -5,15 +5,16 @@
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Wyświetl</button>
 </form>
-<div>
-    {%for item in category %}
-    <p> 
+<br>
+{%for item in category %}
+    <div class="see">
         <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
-        {{item.title}}</a>
-    </p>
-    <p>
+            {{item.title}}</a>
+            <p>
         Uwagi do maeriału: {{item.attention}}
     </p>
-</div>
+    </div>
+    <br>
+
 {% endfor %}
 {% endblock %}
