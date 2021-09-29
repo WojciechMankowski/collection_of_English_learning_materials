@@ -1,2 +1,2 @@
-web: gunicorn mysite.wsgi
+web: gunicorn collection_of_materials.wsgi
 
